@@ -16,7 +16,6 @@ async function getAlarm(alarm){
   device.on('connect', function() {
       console.log('connect');
       device.subscribe(alarm);
-     // device.publish(alarm, JSON.stringify({ test_data: "publish from node.js"}));
     });
 }
 
@@ -46,12 +45,13 @@ router.get('/index', function(req,res,next) {
     }).lean();
 })
 
+//auth key and cert
 var device = awsIot.device({
-  keyPath: './certs/10eddb17bb-private.pem.key',
-  certPath: './certs/10eddb17bb-certificate.pem.crt',
+  keyPath: './certs/private.pem.key',
+  certPath: './certs/certificate.pem.crt',
   caPath: './certs/AmazonRootCA1.pem',
-  clientId: "qwerty", // some random value for now!
-  host: 'a3ddoytnj05dne-ats.iot.us-east-1.amazonaws.com'
+  clientId: "qwerty",
+  host: 'xyz.iot.us-east-1.amazonaws.com'
 });
 
 getAlarm('TOUCH');
