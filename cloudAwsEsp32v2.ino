@@ -4,10 +4,10 @@
 #include <PubSubClient.h>
 #include "topSecret.h"
 
-const char* ssid = "vodafone-9C33"; //Provide your SSID
-const char* password = "GQ8FU4JCLMMB64RR"; // Provide Password
+const char* ssid = "xyz"; //Provide your SSID
+const char* password = "xyz"; // Provide Password
 
-const char* mqtt_server = "a3ddoytnj05dne-ats.iot.us-east-1.amazonaws.com"; // Relace with your MQTT END point
+const char* mqtt_server = "xyz.iot.us-east-1.amazonaws.com"; // Replace with your MQTT END point
 const int mqtt_port = 8883;
 
 
