@@ -18,8 +18,6 @@ int hallMonitorVal = 0;
 int touchSensorVal=50;
 int hallMonitorPrevVal = -1; 
 int touchSensorPrevVal=0;//set previous value check for false-positive cases;
-int openingTime = 800;
-int closingTime = 2000; //might need to replace this, not sure how to implement time yet
 int touchSensorFlag = 0;
 int hallMonitorFlag = 0;
 
